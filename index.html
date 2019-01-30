@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste Bootstrap 3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<style>
+  .row::before {
+    margin: 36px 0;
+    content: "Visualização desktop";
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .row::before {
+      content: "Visualização Mobile";
+    }
+  }
+
+  [class*="item-"] {
+    height: 300px;
+  }
+
+  .item-1 {
+    background-color: #B622B5;
+  }
+
+  .item-2 {
+    background-color: #3350B9;
+  }
+
+  .item-3 {
+    background-color: #0097F6;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-lg-4 item-1"></div>
+      <div class="col-xs-6 col-lg-6 item-2"></div>
+      <div class="col-xs-6 col-lg-2 item-3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
